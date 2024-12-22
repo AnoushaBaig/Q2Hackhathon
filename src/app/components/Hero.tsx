@@ -22,7 +22,7 @@ function HeroSection() {
       {/* Right Content (Image) */}
       <div className="flex-1 w-full md:w-[570px] flex justify-center md:justify-end bg-white">
         <Image
-          src="/right Image.png" // Replace with your image path
+          src="/Right Image.png" // Replace with your image path
           alt="Modern Chair"
           width={570}
           height={400}
