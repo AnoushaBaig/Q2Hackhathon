@@ -15,7 +15,9 @@ const Card = (arr: { arr: {id: number, title: string, image: string, price: numb
                                     <div className='w-6 h-6'>
                                         <Image src={"/cart.png"} alt="" width={600} height={600} className='w-full h-full object-cover invert'/>
                                     </div>
-                                    <div className="text-white text-sm">Add to cart</div>
+                                    <div className="text-white text-sm">
+                                        <Link href={"/Cart"}>Add to cart</Link>
+                                        </div>
                                 </div>
                             </div>
                         </div>

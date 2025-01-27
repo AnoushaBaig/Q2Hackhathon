@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -10,7 +11,7 @@ const Footer = () => {
           {/* Menu Section */}
           <div>
             <h2 className="font-medium text-xl">Menu</h2>
-            <ul className="mt-4 space-y-3 text-zinc-200 font-light">
+            <ul className="mt-4 space-y-3 text-zinc-200 font-light cursor-pointer">
               <li>New Arrivals</li>
               <li>Best Sellers</li>
               <li>Recently Viewed</li>
@@ -22,7 +23,7 @@ const Footer = () => {
           {/* Categories Section */}
           <div>
             <h2 className="font-medium text-xl">Categories</h2>
-            <ul className="mt-4 space-y-3 text-zinc-200 font-light">
+            <ul className="mt-4 space-y-3 text-zinc-200 font-light cursor-pointer">
               <li>Crockery</li>
               <li>Furniture</li>
               <li>HomeWare</li>
@@ -34,7 +35,7 @@ const Footer = () => {
           {/* Company Section */}
           <div>
             <h2 className="font-medium text-xl">Our Company</h2>
-            <ul className="mt-4 space-y-3 text-zinc-200 font-light">
+            <ul className="mt-4 space-y-3 text-zinc-200 font-light cursor-pointer">
               <li>About Us</li>
               <li>Vacancies</li>
               <li>Contact us</li>
@@ -62,10 +63,15 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="mt-4 flex space-x-4 justify-center sm:justify-start">
-          <FaLinkedinIn />
-          <FaTwitter />
-          <FaInstagram />
-          <FaFacebook />
+          <Link href={'https://www.linkedin.com/in/anousha-baig-021a832b6/'}>
+          <FaLinkedinIn /> </Link>
+          <Link href={'https://www.linkedin.com/in/anousha-baig-021a832b6/'}>
+          <FaTwitter /></Link>
+           <Link href={'https://www.instagram.com/baig_anousha/'}>
+
+          <FaInstagram /></Link>
+          <Link href={'https://www.linkedin.com/in/anousha-baig-021a832b6/'}>
+          <FaFacebook /> </Link>
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { GoPlus } from "react-icons/go";
 import { LuMinus } from "react-icons/lu";
 import { useState } from "react";
+import Link from "next/link";
 
 type ProductType = {
   title: string;
@@ -70,8 +71,9 @@ const Detail = ({ product }: { product: ProductType }) => {
                 <GoPlus />
               </span>
             </div>
+            
             <button className="rounded-sm bg-[#2A254B] text-white md:px-8 px-5 sm:py-2 py-3 sm:text-base text-xs">
-              Add to Cart
+            <Link href={"/Cart"}>Add to cart</Link>
             </button>
             <span className="w-10 h-10 border border-zinc-400 rounded-md flex justify-center items-center p-2">
                     <Image src={"/heart.png"} alt="" width={100} height={100} className="w-full h-full object-cover" />
