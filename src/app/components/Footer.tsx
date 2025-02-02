@@ -16,7 +16,8 @@ const Footer = () => {
               <li>Best Sellers</li>
               <li>Recently Viewed</li>
               <li>Popular This Week</li>
-              <li>All Product</li>
+              <Link href='/AllProducts'>
+              <li>All Product</li></Link>
             </ul>
           </div>
 
@@ -38,7 +39,8 @@ const Footer = () => {
             <ul className="mt-4 space-y-3 text-zinc-200 font-light cursor-pointer">
               <li>About Us</li>
               <li>Vacancies</li>
-              <li>Contact us</li>
+              <Link href='/myaccount'>
+              <li>Contact us</li></Link>
               <li>Privacy</li>
               <li>Return Policy</li>
             </ul>

@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react"
-import { FaAlignJustify,  FaSearch, FaShoppingCart } from 'react-icons/fa';
+import { FaAlignJustify,  FaShoppingCart } from 'react-icons/fa';
 import { BsPersonExclamation } from "react-icons/bs";
 import { fetchCategories } from "../../../utils/fechCategories";
 import { useCart } from "../../../context/Cart_Context";
+import SearchBar from "./Searchbar";
 
 interface Category {
   _id: string;
@@ -38,13 +39,13 @@ const Header = () => {
         {/* Left: Search icon */}
         <div className="flex items-center gap-3 lg:flex-1">
           <div className="relative">
-            <FaSearch className="text-gray-500" />
+            <SearchBar  />
           </div>
         </div>
 
         {/* Center: Logo */}
         <Link href="/">
-          <h1 className="hidden lg:flex text-black text-2xl font-bold lg:text-4xl">Avion</h1>
+          <h1 className=" lg:flex text-black text-2xl font-bold lg:text-4xl">Avion</h1>
         </Link>
 
         {/* Right: Cart and Profile */}

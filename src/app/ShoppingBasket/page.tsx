@@ -35,11 +35,13 @@ export default function ShoppingBasket() {
           <div className="text-center text-gray-500 text-lg mt-12">
             <div className="flex justify-center items-center flex-col">
               <FaShoppingCart size={80} className="text-gray-400 mb-4" />
-              <p>Your cart is empty :(</p>
+              <p>Your cart is empty</p>
               <Link href="/AllProducts">
-                <button className="mt-4 bg-gray-700 text-white hover:bg-gray-800 rounded-xl w-20">
-                  Shop
-                </button>
+                 <div className="mt-4 rounded-xl w-20">
+                  {/* Shop */}
+                
+                <button className="hover:brightness-110 hover:animate-pulse font-bold py-3 px-6 rounded-full bg-indigo-500 shadow-lg shadow-indigo-500/50 text-white">shop Now</button>
+                </div> 
               </Link>
             </div>
           </div>

@@ -47,7 +47,7 @@ const CategoryPage = () => {
     const fetchProducts = async () => {
       try {
         const productsData = await client.fetch(
-          `*[_type == "product"]{
+          `*[_type == "product"  && category._ref == $categoryId]{
             _id,
             name,
             price,

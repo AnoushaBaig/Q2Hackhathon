@@ -84,7 +84,7 @@ export default function Navbar() {
         {/* Hamburger Menu for Mobile */}
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden flex flex-col gap-1 cursor-pointer"
+          className="lg:hidden flex flex-col gap-1 cursor-pointer text-8xl"
         >
           <span className="block w-6 h-1 bg-black"></span>
           <span className="block w-6 h-1 bg-black"></span>
@@ -95,7 +95,7 @@ export default function Navbar() {
   
     {/* Mobile Menu */}
     {isOpen && (
-      <div className="lg:hidden absolute top-0 left-0 right-0 bg-white shadow-lg p-4 z-50">
+      <div className="lg:hidden absolute top-0 left-0 right-5 bg-slate-200 shadow-lg p-4 z-50 ">
         <nav className="flex flex-col gap-4 text-lg text-[#726E8D]">
           <Link
             href="/AllProducts"

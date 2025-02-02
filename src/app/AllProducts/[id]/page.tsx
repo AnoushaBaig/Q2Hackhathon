@@ -5,10 +5,8 @@ import { useParams } from "next/navigation";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
-// import { Button } from "../../../components/ui/button";
 import Image from "next/image";
 import Navbar from "./navbar";
-// import SignUpSection from "@/components/Signup";
 import { ProductData } from "@/app/types/ProductType";
 import { useCart } from "../../../../context/Cart_Context";
 import Club from "@/app/components/Club";
@@ -61,7 +59,7 @@ const ProductPage = () => {
     const fetchProducts = async () => {
       try {
         const features = await client.fetch(
-          `*[_type == "product"][2..5]{
+          `*[_type == "product"][4..7]{
             id,
             name,
             price,
@@ -221,10 +219,9 @@ const ProductPage = () => {
 </div>
 
         </div>
-        {/* Signup Section */}
            <Club/>
       </div>
-    // </div>
+   
   );
 };
 
